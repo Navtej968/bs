@@ -1,0 +1,4 @@
+ensta==5.1.9
+pillow==9.5.0
+requests==2.31.0
+flask
