@@ -17,7 +17,7 @@ from ensta import Host
 
 def login():
   insta = Host(os.environ['username'], os.environ['password'])
-  return host
+  return insta
   
   
 def getimage():
