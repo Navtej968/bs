@@ -15,7 +15,7 @@ from ensta import Host
 #insta = Host()
 
 
-def login()
+def login():
   insta = Host(os.environ['username'], os.environ['password'])
   
   
