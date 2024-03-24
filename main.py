@@ -15,8 +15,8 @@ from ensta import Host
 #insta = Host()
 
 
-
-insta = Host(os.environ['username'], os.environ['password'])
+def login()
+  insta = Host(os.environ['username'], os.environ['password'])
   
   
   
@@ -56,8 +56,8 @@ def upload_img():
 
 def main():
   keep_alive()
-  #login()
   while (True):
+    login()
     getimage()
     upload_img()
     print(get_prompt())
