@@ -17,7 +17,7 @@ from ensta import Host
 
 def login():
   insta = Host(os.environ['username'], os.environ['password'])
-  
+  return host
   
   
 def getimage():
@@ -48,7 +48,7 @@ def getimage():
   img.save('pic.jpg')
 
 
-def upload_img():
+def upload_img(insta):
   upload_id = insta.get_upload_id("pic.jpg")
   insta.upload_photo(upload_id,"pewpewpew \n #art#aiart#idk")
   os.remove("pic.jpg")
@@ -57,9 +57,9 @@ def upload_img():
 def main():
   keep_alive()
   while (True):
-    login()
+    insta = login()
     getimage()
-    upload_img()
+    upload_img(insta)
     print(get_prompt())
     time.sleep(21600)
 
