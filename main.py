@@ -27,7 +27,7 @@ def getimage():
     headers={
       "Content-Type": "application/json",
       "Accept": "application/json",
-      "Authorization": "sk-3T9bZCmys1ku91a4V2Hz1IhfUYG9DloaGuHBxK35OfxuOuuc"
+      "Authorization": "sk-x2zsr4nRGbGyucQjePmXXzcti6Ng3fbHNaPnd8H5PN9Pbe6q"
     },
     json={
       "text_prompts": [{
