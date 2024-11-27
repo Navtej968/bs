@@ -17,8 +17,7 @@ from ensta import Host
 
 
 def login():
-  # insta = Host(os.environ['username'], os.environ['password'])
-  insta = Host("automated_art" , "69xdebugger")
+  insta = Host(os.environ['username'], os.environ['password'])
   return insta
   
   
