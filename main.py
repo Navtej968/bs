@@ -11,14 +11,14 @@ import time
 import io
 import os
 #from insta_share import Instagram
-from ensta import Host
+from ensta import Mobile
 
 #insta = Host()
 
 
 def login():
-  insta = Host(os.environ['username'], os.environ['password'])
-  return insta
+  mobile = Mobile(os.environ['username'], os.environ['password'])
+  return mobile
   
   
 # def getimage():
@@ -52,18 +52,18 @@ def get_img():
   prompt = get_prompt()
   urllib.request.urlretrieve(f'https://image.pollinations.ai/prompt/{prompt}', 'pic.png')
 
-def upload_img(insta):
-  upload_id = insta.get_upload_id("pic.png")
-  insta.upload_photo(upload_id,"pewpewpew \n #art#aiart#idk")
-  os.remove("pic.jpg")
+def upload_img(mobile):
+  upload_id = mobile.get_upload_id("pic.png")
+  mobile.upload_photo(upload_id,"pewpewpew \n #art#aiart#idk")
+  os.remove("pic.png")
 
 
 def main():
   keep_alive()
   while (True):
-    insta = login()
+    mobile = login()
     get_img()
-    upload_img(insta)
+    upload_img(mobile)
     print(get_prompt())
     time.sleep(21600)
 
