@@ -19,11 +19,11 @@ Make sure you have the following installed on your system:
 
 Clone this repository and install the necessary Python libraries:
 
-```bash
+```
 git clone https://github.com/Navtej968/bs.git
 cd bs
 pip install -r requirements.txt
-```bash
+```
 
 
 
